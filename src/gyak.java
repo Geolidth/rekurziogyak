@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class gyak {
-    static int calc = 0;
-    static double szum = 1;
+    static double szum=1;
 
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
@@ -17,12 +16,11 @@ public class gyak {
 
     public static double powing(int a, int b) {
 
-        if (calc < (b)) {
-            calc++;
+        if (b>0) {
+            b--;
             szum = szum * a;
             powing(a, b);
         }
-        calc = 0;
         return szum;
 
     }
